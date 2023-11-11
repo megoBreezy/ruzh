@@ -307,3 +307,22 @@
 .prices-structure + .prices-row {
   border-top: 0;
 }
+
+.prices-period > .accordion__item > .accordion__header {
+  background: #9C0F0F;
+  color: #fff;
+}
+.prices-period > .accordion__item > .accordion__header::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7.41 16L12 11.42L16.59 16L18 14.59L12 8.59L6 14.59L7.41 16Z" fill="white"/></svg>');
+}
+.prices-period > .accordion__item > .accordion__body.active {
+  padding: 20px 0;
+}
+@media only screen and (min-width: 768px) {
+  .prices-period > .accordion__item > .accordion__body.active {
+    padding: 30px 0 40px;
+  }
+}
+.prices-period > .accordion__item > .accordion__body.active > .accordion__inner {
+  overflow: visible;
+}
