@@ -21,7 +21,6 @@ class Accordion {
             body.classList.remove('active');
         } else {
             clickedHeader.classList.add(this.activeClass);
-            const height = body.querySelector('.accordion__inner').scrollHeight + 'px';
             body.classList.add('active');
         }
     }
