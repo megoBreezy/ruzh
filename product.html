@@ -2,22 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>catalog</title>
+    <title>product</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/numbers.css">
     <link rel="stylesheet" href="css/libs/tom-select.min.css">
     <link rel="stylesheet" href="css/libs/datepicker.min.css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/numbers.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div id="overlay"></div>
     <main id="main">
       <div class="content">
-        <header class="header">
+        <header class="header heade-reservation">
           <div class="main-container">
             <div class="header-top"> <a class="logo header__logo" href="#">
                 <div class="logo__img"> <img src="img/logo.png" alt="logo"></div>
@@ -218,110 +220,346 @@
               </ul>
             </div>
           </div>
+          <div class="reservation">
+            <button class="btn-reservation"> <span class="btn-reservation__active">Бронирование номеров</span><span class="btn-reservation__close">Свернуть форму бронирования</span></button>
+            <div class="reservation__inner">
+              <div class="main-container">
+                <form class="reservation-form" action="#">
+                  <div class="reservation-date js-rangepicker">
+                    <div class="reservation-item"> 
+                      <div class="reservation-item__label">Заезд</div>
+                      <div class="reservation-item__input-cont">
+                        <input class="reservation-item__input" type="text" name="start"><span class="reservation-item__icon"> 
+                          <svg class="icon icon--calendar">
+                            <use href="img/sprite.svg#calendar"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                    <div class="reservation-item"> 
+                      <div class="reservation-item__label">Выезд</div>
+                      <div class="reservation-item__input-cont">
+                        <input class="reservation-item__input" type="text" name="end"><span class="reservation-item__icon"> 
+                          <svg class="icon icon--calendar">
+                            <use href="img/sprite.svg#calendar"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reservation-item"> 
+                    <div class="reservation-item__label">Гостей</div>
+                    <select class="js-select reservation-item__select">
+                      <option value="1">2 взрослых, 0 детей</option>
+                      <option value="2">3 взрослых, 0 детей</option>
+                      <option value="3">3 взрослых, 1 детей</option>
+                    </select>
+                  </div>
+                  <button class="btn btn-primary" type="button">Забронировать</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </header>
         <div class="main-container"> 
-          <ul class="breadcrumbs"> 
+          <ul class="breadcrumbs breadcrumbs-reservation">
             <li> <a href="#">Главная</a></li>
-            <li>Путевки</li>
+            <li> <a href="#">Путевки</a></li>
+            <li>Номера</li>
           </ul>
         </div>
         <section class="section">
           <div class="main-container"> 
-            <h3 class="section-title">Путевки санатория</h3>
-            <div class="section-sub section-sub-sm">
-              <p>Санаторий «Ружанский» — расположен в глубине хвойного леса в Брестской области возле озера Паперня близ посёлка городского типа Ружаны. </p>
+            <h1 class="section-title product-page-title">Коттеджи "Польское предместье"</h1>
+            <div class="product-wrap"> 
+              <div class="pduct-left js-product-previwe-slider"> 
+                <div class="product-full-slider">
+                  <div class="swiper"> 
+                    <div class="swiper-wrapper"> 
+                      <div class="swiper-slide"> <img src="img/product/product-1.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-2.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-3.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-4.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-thumb-slider">
+                  <div class="swiper"> 
+                    <div class="swiper-wrapper"> 
+                      <div class="swiper-slide"> <img src="img/product/product-1.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-2.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-3.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="img/product/product-4.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+              <div class="product-right"> 
+                <h3 class="product-title">Коттеджи</h3>
+                <div class="product-info">
+                  <div class="product-info__row">
+                     Площадь: <span>107 м<sup>2</sup></span></div>
+                  <div class="product-info__row">
+                     Максимальное число проживающих: <span>6 </span></div>
+                </div>
+                <div class="product-special"> 
+                  <div class="product-special__item"> 
+                    <svg class="icon">
+                      <use href="img/room-info.svg#bed"></use>
+                    </svg>6 спальни
+                  </div>
+                  <div class="product-special__item"> 
+                    <svg class="icon">
+                      <use href="img/room-info.svg#kitchen"></use>
+                    </svg>1 гостиная, кухня
+                  </div>
+                  <div class="product-special__item"> 
+                    <svg class="icon">
+                      <use href="img/room-info.svg#bath"></use>
+                    </svg>Ванная комната с душем, санузел
+                  </div>
+                  <div class="product-special__item"> 
+                    <svg class="icon">
+                      <use href="img/room-info.svg#loggia"></use>
+                    </svg>Лоджия
+                  </div>
+                  <div class="product-special__item"> 
+                    <svg class="icon">
+                      <use href="img/room-info.svg#phone"></use>
+                    </svg>Телефонная связь
+                  </div>
+                  <div class="drop-special"> 
+                    <div class="drop-special__item">
+                      <div class="product-special__item"> 
+                        <svg class="icon">
+                          <use href="img/room-info.svg#bed"></use>
+                        </svg>6 спальни
+                      </div>
+                      <div class="product-special__item"> 
+                        <svg class="icon">
+                          <use href="img/room-info.svg#kitchen"></use>
+                        </svg>1 гостиная, кухня
+                      </div>
+                      <div class="product-special__item"> 
+                        <svg class="icon">
+                          <use href="img/room-info.svg#bath"></use>
+                        </svg>Ванная комната с душем, санузел
+                      </div>
+                      <div class="product-special__item"> 
+                        <svg class="icon">
+                          <use href="img/room-info.svg#loggia"></use>
+                        </svg>Лоджия
+                      </div>
+                      <div class="product-special__item"> 
+                        <svg class="icon">
+                          <use href="img/room-info.svg#phone"></use>
+                        </svg>Телефонная связь
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn-drop-special"> <span class="btn-drop-special__active">Вся информация</span><span class="btn-drop-special__close">Скрыть</span>
+                    <svg class="icon icon--angle-down">
+                      <use href="img/sprite.svg#angle-down"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-price"> 
+                  <div class="product-price__title">Стоимость указана на путевку с лечением в сутки:</div>
+                  <div class="product-price__price">от 1000 BYN / за человека</div>
+                </div><a class="btn btn-primary product-btn" href="#">Забронировать
+                  <svg class="icon icon--arrow-right">
+                    <use href="img/sprite.svg#arrow-right"></use>
+                  </svg></a>
+              </div>
+              <div class="product-text"> 
+                <h3>Описание номера</h3>
+                <p>На территории санатория расположено пять срубовых коттеджей семейного типа, отдельно стоящих от основных жилых корпусов санатория. Каждый коттедж разделен на несколько номеров с отдельными входами. В таком номере Вы найдете большую комнату, зонально разделенную на гостиную с удобным диваном, телевизором и журнальным столиком, спальню с большой 2-х спальной кроватью и уютную кухню с холодильником, микроволновкой, электрочайником и комплектом необходимой посуды. Также здесь имеется совмещенный санузел с  удобной душевой кабиной. </p>
+                <p>Во всех номерах установлены телевизоры с 22 доступными телеканалами (развлекательные, музыкальные, детские, информационные, спортивные и др.), имеется душ и туалет. Также в каждом номере имеется выход на балкон, что дает возможность нашим гостям в любое время дня и ночи любоваться живописными пейзажами нашей природы.</p>
+              </div>
             </div>
-            <div class="catalog-grid"> <a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-1.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
+            <div class="section-head"> 
+              <div class="section-head__right">
+                <div class="section-head__title">Наши номера</div>
+                <div class="section-sub section-sub-sm">
+                  <p>Санаторий «Ружанский» — расположен в глубине хвойного леса в Брестской области возле озера Паперня близ посёлка городского типа Ружаны. </p>
                 </div>
-                <div class="pass-item__name">Путёвка <br>с оздоровлением</div>
-                <div class="pass-item__time">От 1 ночи</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-5.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
+              </div><a class="section-head__link" href="#">Смотреть все номера
+                <svg class="icon icon--arrow-right">
+                  <use href="img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+            <div class="number-slider js-number-slider"> 
+              <div class="swiper-scrollbar"></div>
+              <div class="swiper-navigation">
+                <div class="swiper-button-prev">
+                  <svg class="icon icon--angle-left">
+                    <use href="img/sprite.svg#angle-left"></use>
+                  </svg>
                 </div>
-                <div class="pass-item__name">Путёвка <br>с лечением</div>
-                <div class="pass-item__time">От 7 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-3.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
+                <div class="swiper-button-next">
+                  <svg class="icon icon--angle-right">
+                    <use href="img/sprite.svg#angle-right"></use>
+                  </svg>
                 </div>
-                <div class="pass-item__name">Спа-выходные<br>в Ружанском</div>
-                <div class="pass-item__time">2 дня / 2 ночи</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-6.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Часто болеющий ребёнок</div>
-                <div class="pass-item__time">От 7 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-7.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Сбрось лишнее</div>
-                <div class="pass-item__time">От 7 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-8.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Восстановление после  стресса</div>
-                <div class="pass-item__time">От 11 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-2.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Восстановление после заболеваний дыхательных путей</div>
-                <div class="pass-item__time">От 11 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-9.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Диабет-2</div>
-                <div class="pass-item__time">От 11 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-10.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Восстановление системы кровообращения</div>
-                <div class="pass-item__time">От 11 ночей</div></a><a class="pass-item" href="#"> 
-                <div class="pass-item__img"> <img src="img/pass/pass-4.jpg" alt="">
-                  <div class="pass-item__arrow"> 
-                    <svg class="icon icon--arrow-right">
-                      <use href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="pass-item__name">Восстановление костно-мышечной сиситемы</div>
-                <div class="pass-item__time">От 11 ночей</div></a></div>
+              </div>
+              <div class="swiper"> 
+                <div class="swiper-wrapper"> <a class="swiper-slide number-item" href="#">
+                    <div class="number-item__img"> <img src="img/number/number-3.jpg" alt="">
+                      <div class="number-item__arrow"> 
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="number-item__title">Однокомнатный</div>
+                    <div class="number-item__bottom"> 
+                      <div class="number-item__area">Площадь 16 м²</div>
+                      <ul class="number-item__special">
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#places"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bed"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bath"></use>
+                          </svg><span>1</span>
+                        </li>
+                      </ul>
+                    </div></a><a class="swiper-slide number-item" href="#">
+                    <div class="number-item__img"> <img src="img/number/number-4.jpg" alt="">
+                      <div class="number-item__arrow"> 
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="number-item__title">Однокомнатный Эконом</div>
+                    <div class="number-item__bottom"> 
+                      <div class="number-item__area">Площадь 16 м²</div>
+                      <ul class="number-item__special">
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#places"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bed"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bath"></use>
+                          </svg><span>1</span>
+                        </li>
+                      </ul>
+                    </div></a><a class="swiper-slide number-item" href="#">
+                    <div class="number-item__img"> <img src="img/number/number-5.jpg" alt="">
+                      <div class="number-item__arrow"> 
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="number-item__title">Однокомнатный Стандарт</div>
+                    <div class="number-item__bottom"> 
+                      <div class="number-item__area">Площадь 22 м²</div>
+                      <ul class="number-item__special">
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#places"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bed"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bath"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#conditioner"></use>
+                          </svg><span>1</span>
+                        </li>
+                      </ul>
+                    </div></a><a class="swiper-slide number-item" href="#">
+                    <div class="number-item__img"> <img src="img/number/number-5.jpg" alt="">
+                      <div class="number-item__arrow"> 
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="number-item__title">Однокомнатный Стандарт</div>
+                    <div class="number-item__bottom"> 
+                      <div class="number-item__area">Площадь 22 м²</div>
+                      <ul class="number-item__special">
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#places"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bed"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bath"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#conditioner"></use>
+                          </svg><span>1</span>
+                        </li>
+                      </ul>
+                    </div></a><a class="swiper-slide number-item" href="#">
+                    <div class="number-item__img"> <img src="img/number/number-5.jpg" alt="">
+                      <div class="number-item__arrow"> 
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="number-item__title">Однокомнатный Стандарт</div>
+                    <div class="number-item__bottom"> 
+                      <div class="number-item__area">Площадь 22 м²</div>
+                      <ul class="number-item__special">
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#places"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bed"></use>
+                          </svg><span>3</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#bath"></use>
+                          </svg><span>1</span>
+                        </li>
+                        <li>
+                          <svg class="icon">
+                            <use href="img/room-info.svg#conditioner"></use>
+                          </svg><span>1</span>
+                        </li>
+                      </ul>
+                    </div></a></div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="section-reviews">
@@ -613,6 +851,9 @@
     <script src="js/libs/datepicker-full.min.js"></script>
     <script src="js/libs/tom-select.complete.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/numberSliderHandler.js"></script>
+    <script src="js/productSliderHandler.js"></script>
+    <script src="js/dropSpecialHandler.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

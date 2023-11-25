@@ -17,7 +17,7 @@
   display: grid;
   -ms-grid-columns: 0.75fr 1.2fr;
   grid-template-columns: 0.75fr 1.2fr;
-  color: #B52743;
+  color: #9C0F0F;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -165,15 +165,15 @@
   }
 }
 .currency-btn:hover {
-  background: #B52743;
-  border-color: #B52743;
+  background: #9C0F0F;
+  border-color: #9C0F0F;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(181, 39, 67, 0.2);
           box-shadow: 0px 4px 10px 0px rgba(181, 39, 67, 0.2);
   color: #fff;
 }
 .currency-btn.active {
-  background: #B52743;
-  border-color: #B52743;
+  background: #9C0F0F;
+  border-color: #9C0F0F;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(181, 39, 67, 0.2);
           box-shadow: 0px 4px 10px 0px rgba(181, 39, 67, 0.2);
   color: #fff;
