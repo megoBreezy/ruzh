@@ -56,3 +56,4 @@ class NumberSlider {
 }
 
 const numberSlider = new NumberSlider('.js-number-slider');
+const articleSlider = new NumberSlider('.js-article-slider');
