@@ -11,5 +11,4 @@ class ToggleClass {
   }
 }
 
-// Створюємо новий екземпляр класу ToggleClass для кнопки та блока
 const toggleSpecialClass = new ToggleClass("btn-drop-special", "drop-special");

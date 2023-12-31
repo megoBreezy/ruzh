@@ -395,7 +395,7 @@ body {
 .social__link {
   text-decoration: none;
   outline: 0;
-  color: #B82945;
+  color: #9C0F0F;
 }
 .social__link:hover svg {
   -webkit-transform: scale(1.1);
@@ -609,7 +609,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 29px;
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px) {
@@ -628,12 +627,15 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 29px;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
   .section-head__title {
     margin-bottom: 20px;
   }
+}
+.section-head .section-head__right .section-head__title {
+  margin-bottom: 29px;
 }
 .section-head__link {
   text-decoration: none;
@@ -651,6 +653,11 @@ body {
   transition: 0.3s all ease;
   white-space: nowrap;
 }
+@media only screen and (max-width: 767px) {
+  .section-head__link {
+    white-space: normal;
+  }
+}
 .section-head__link .icon {
   margin-left: 17px;
 }
@@ -664,6 +671,15 @@ body {
 @media only screen and (max-width: 767px) {
   .section-head .section-sub {
     margin-bottom: 20px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .mb-60 {
+    margin-bottom: 60px;
   }
 }
 
@@ -726,6 +742,36 @@ body {
   text-decoration: none;
 }
 
+.btn-lg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  border: 0;
+  background: transparent;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12.5px 15px;
+}
+@media only screen and (min-width: 768px) {
+  .btn-lg {
+    padding: 21px 33.5px;
+  }
+}
+
 .btn-primary {
   background: #9C0F0F;
   color: #fff;
@@ -749,6 +795,11 @@ body {
   .btn-more {
     width: 100%;
   }
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
 }
 
 .header {

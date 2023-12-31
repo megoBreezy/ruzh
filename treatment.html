@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>treatment</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/tom-select.min.css">
+    <link rel="stylesheet" href="css/libs/datepicker.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/inner-page.css">
+    <link rel="stylesheet" href="css/treatment.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <div class="content">
+        <header class="header heade-reservation">
+          <div class="main-container">
+            <div class="header-top"> <a class="logo header__logo" href="#">
+                <div class="logo__img"> <img src="img/logo.png" alt="logo"></div>
+                <p class="logo__text">Санаторий «Ружанский»<br>Курортно-реабилитационный центр «Ружанский»<br>Курорт «Ружа Хутар-Роза SPA» </p></a>
+              <ul class="social header__social">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#odnoklasniki"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+              <button class="button-eye button-eye-mobile">
+                <svg class="icon icon--eye">
+                  <use href="img/sprite.svg#eye"></use>
+                </svg>
+              </button>
+              <div class="header-contacts">
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Ресепшен</h3>
+                  <div class="header-contacts__body"><a class="header-contacts__phone" href="tel:+375292256033">+375 (29) 225 60 33</a>
+                    <div class="header-contacts__drop"><a class="header-contacts__phone" href="tel:+375163233465">+375 (1632) 33 465</a></div>
+                    <button class="header-contacts__btn-drop"></button>
+                  </div>
+                </div>
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Отдел бронирования</h3>
+                  <div class="header-contacts__body"><a class="header-contacts__phone" href="tel:+375447440203">+375 (44) 744 02 03</a>
+                    <div class="header-contacts__drop"><a class="header-contacts__phone" href="tel:+375163233426">+375 (1632) 33 426</a></div>
+                    <button class="header-contacts__btn-drop"></button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-menu">
+                <svg class="icon icon--menu">
+                  <use href="img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header-bottom"> 
+              <div class="nav header__nav"> 
+                <ul class="nav__list"> 
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <button class="button-eye"> 
+                <svg class="icon icon--eye">
+                  <use href="img/sprite.svg#eye"></use>
+                </svg>
+              </button>
+              <ul class="lang">
+                <li class="lang__item"><a class="lang__link active" href="#">рус</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">бел</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">eng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-menu"> 
+            <div class="mobile-menu__head"><a class="logo" href="#">
+                <div class="logo__img"> <img src="img/logo.png" alt="logo"></div>
+                <p class="logo__text">Санаторий «Ружанский»<br>Курортно-реабилитационный центр «Ружанский»<br>Курорт «Ружа Хутар-Роза SPA» </p></a>
+              <button class="mobile-menu__close"> 
+                <svg class="icon icon--cross">
+                  <use href="img/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__body">
+              <div class="nav">
+                <ul class="nav__list"> 
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <ul class="lang">
+                <li class="lang__item"><a class="lang__link active" href="#">рус</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">бел</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">eng</a></li>
+              </ul>
+              <div class="header-contacts">
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Ресепшен</h3><a class="header-contacts__phone" href="tel:+375292256033">+375 (29) 225 60 33</a><a class="header-contacts__phone" href="tel:+375163233465">+375 (1632) 33 465</a>
+                </div>
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Отдел бронирования</h3><a class="header-contacts__phone" href="tel:+375447440203">+375 (44) 744 02 03</a><a class="header-contacts__phone" href="tel:+375163233426">+375 (1632) 33 426</a>
+                </div>
+              </div>
+              <ul class="social">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#odnoklasniki"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="reservation">
+            <button class="btn-reservation"> <span class="btn-reservation__active">Бронирование номеров</span><span class="btn-reservation__close">Свернуть форму бронирования</span></button>
+            <div class="reservation__inner">
+              <div class="main-container">
+                <form class="reservation-form" action="#">
+                  <div class="reservation-date js-rangepicker">
+                    <div class="reservation-item"> 
+                      <div class="reservation-item__label">Заезд</div>
+                      <div class="reservation-item__input-cont">
+                        <input class="reservation-item__input" type="text" name="start"><span class="reservation-item__icon"> 
+                          <svg class="icon icon--calendar">
+                            <use href="img/sprite.svg#calendar"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                    <div class="reservation-item"> 
+                      <div class="reservation-item__label">Выезд</div>
+                      <div class="reservation-item__input-cont">
+                        <input class="reservation-item__input" type="text" name="end"><span class="reservation-item__icon"> 
+                          <svg class="icon icon--calendar">
+                            <use href="img/sprite.svg#calendar"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reservation-item"> 
+                    <div class="reservation-item__label">Гостей</div>
+                    <select class="js-select reservation-item__select">
+                      <option value="1">2 взрослых, 0 детей</option>
+                      <option value="2">3 взрослых, 0 детей</option>
+                      <option value="3">3 взрослых, 1 детей</option>
+                    </select>
+                  </div>
+                  <button class="btn btn-primary" type="button">Забронировать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="main-container"> 
+          <ul class="breadcrumbs breadcrumbs-reservation"> 
+            <li> <a href="#">Главная</a></li>
+            <li>Лечение</li>
+          </ul>
+        </div>
+        <section class="section">
+          <div class="hero-treatment"> 
+            <div class="hero-treatment__bg"> <img class="hero-treatment--desctop" src="img/hero-treatment.jpg" alt=""><img class="hero-treatment--mobile" src="img/hero-treatment-mobile.jpg" alt=""></div>
+            <div class="main-container"> 
+              <div class="hero-treatment__inner"> 
+                <h1 class="hero-treatment-title">Лечение в санатории "Ружанский"</h1>
+                <ul class="treatment-tabs"> 
+                  <li> <a class="treatment-tab__btn" href="#tab-1">Медицинские профили</a></li>
+                  <li><a class="treatment-tab__btn" href="#tab-2">Лечебные процедуры</a></li>
+                  <li><a class="treatment-tab__btn" href="#tab-3">Природные лечебные факторы</a></li>
+                  <li><a class="treatment-tab__btn" href="#tab-4">Работают врачи</a></li>
+                  <li><a class="treatment-tab__btn" href="#tab-5">Лечебно-диагностические исследования</a></li>
+                  <li><a class="treatment-tab__btn" href="#tab-6">Диагностическая лечебная база</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tretment-tab-pane"> 
+            <div class="tab-pane" id="tab-1">
+              <div class="main-container"> 
+                <div class="js-treatment-slider treatment-slider">
+                  <div class="swiper"> 
+                    <div class="swiper-wrapper"> <a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-1.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания органов пищеварения</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-2.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания системы кровообращения</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-3.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания костно-мышечной системы и соединительной ткани</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-4.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания органов дыхания</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-5.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания эндокринной системы</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/med-profile/img-6.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Заболевания женских половых органов </div></a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <div class="main-container"> 
+                <div class="procedures-grid"> <a class="article-item" href="#">
+                                    <div class="article-item__img"> <img src="img/treatment/procedures/img-1.jpg" alt="" loading="lazy">
+                                      <div class="article-item__arrow"> 
+                                        <svg class="icon icon--arrow-right">
+                                          <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                    <div class="article-item__title">Водолечение</div></a><a class="article-item" href="#">
+                                    <div class="article-item__img"> <img src="img/treatment/procedures/img-2.jpg" alt="" loading="lazy">
+                                      <div class="article-item__arrow"> 
+                                        <svg class="icon icon--arrow-right">
+                                          <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                    <div class="article-item__title">Теплолечение</div></a><a class="article-item" href="#">
+                                    <div class="article-item__img"> <img src="img/treatment/procedures/img-3.jpg" alt="" loading="lazy">
+                                      <div class="article-item__arrow"> 
+                                        <svg class="icon icon--arrow-right">
+                                          <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                    <div class="article-item__title">Воздействие факторами механической природы</div></a><a class="article-item" href="#">
+                                    <div class="article-item__img"> <img src="img/treatment/procedures/img-4.jpg" alt="" loading="lazy">
+                                      <div class="article-item__arrow"> 
+                                        <svg class="icon icon--arrow-right">
+                                          <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                    <div class="article-item__title">Светолечение</div></a>
+                </div>
+                <div class="treatment-drop js-dropdown">
+                  <div class="dropdown-inner procedures-grid"><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-5.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Электролечение</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-6.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Магнитотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-7.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Ингаляционное лечение</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-8.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Фитотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-9.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Баротерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-10.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Озонотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-11.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Криотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-12.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Аппликации (Talac)</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-13.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">СПА-капсула</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-14.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Кедровая бочка</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-15.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Термовакуумный тренажер (Бодишейп)</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-16.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Фурака</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-17.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Активная клеточная терапия воздействия электромагнитным током INDIBA</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-18.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Рефлексотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-19.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Иглоукалывание</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-20.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Карбокситерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-21.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Фармакопунктура</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-22.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Гирудотерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-23.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Апитерапия</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-24.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Массаж</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-25.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Косметик</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-26.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Манипуляции</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-27.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Лечебная физкультура</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-28.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Стоматология</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-29.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Гинекология</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-30.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Оториноларингология</div></a><a class="article-item" href="#">
+                                      <div class="article-item__img"> <img src="img/treatment/procedures/img-31.jpg" alt="" loading="lazy">
+                                        <div class="article-item__arrow"> 
+                                          <svg class="icon icon--arrow-right">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <div class="article-item__title">Эндокринология</div></a>
+                  </div>
+                </div>
+                <div class="dropdown-btn-cont js-dropdown-cont">
+                  <button class="dropdown-btn js-dropdown-btn" type="button"><span class="--active">Посмотреть все процедуры</span><span class="--close">Свернуть</span>
+                    <svg class="icon icon--angle-down">
+                      <use href="img/sprite.svg#angle-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <div class="main-container"> 
+                <div class="js-treatment-slider-3 treatment-slider">
+                  <div class="swiper"> 
+                    <div class="swiper-wrapper"> <a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/factors/img-1.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Климатотерапия</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/factors/img-2.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Минеральная вода</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/factors/img-3.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Грязелечение</div></a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <div class="main-container"> 
+                <div class="doctors-grid">
+                                    <div class="doctors-grid__item"> 
+                                      <div class="doctor"> 
+                                        <div class="doctor__img"> <img src="img/treatment/doctor/img-1.jpg" alt="" loading="lazy"></div>
+                                        <div class="doctor__name">Карпечкин Владимир <br> Иванович</div>
+                                        <div class="doctor__post">врач-гинеколог, врач ультразвуковой диагностики</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский институт, 1994 год</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 25 лет</div>
+                                      </div>
+                                    </div>
+                                    <div class="doctors-grid__item"> 
+                                      <div class="doctor"> 
+                                        <div class="doctor__img"> <img src="img/treatment/doctor/img-1.jpg" alt="" loading="lazy"></div>
+                                        <div class="doctor__name">Ро­манов­ская Тать­яна <br> Михайлов­на</div>
+                                        <div class="doctor__post">врач-гинеколог, врач ультразвуковой диагностики</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский институт, 1994 год</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 25 лет</div>
+                                      </div>
+                                    </div>
+                                    <div class="doctors-grid__item"> 
+                                      <div class="doctor"> 
+                                        <div class="doctor__img"> <img src="img/treatment/doctor/img-2.jpg" alt="" loading="lazy"></div>
+                                        <div class="doctor__name">Сы­сой Ген­на­дий <br> Ада­мович</div>
+                                        <div class="doctor__post">врач-рефлексотерапевт</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Минский государственный медицинский институт, 1983 год</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 35 лет</div>
+                                      </div>
+                                    </div>
+                                    <div class="doctors-grid__item"> 
+                                      <div class="doctor"> 
+                                        <div class="doctor__img"> <img src="img/treatment/doctor/img-3.jpg" alt="" loading="lazy"></div>
+                                        <div class="doctor__name">Сысой Татьяна <br> Семёновна</div>
+                                        <div class="doctor__post">врач-физиотерапевт</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Минский государственный медицинский институт, 1983 год</div>
+                                        <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 35 лет</div>
+                                      </div>
+                                    </div>
+                </div>
+                <div class="js-dropdown">
+                  <div class="dropdown-inner doctors-grid">
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-4.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Манчик Галина <br> Николаевна</div>
+                                          <div class="doctor__post">врач-стоматолог-терапевт</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Минский государственный медицинский институт, 1990 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 29 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-5.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Товстик Василий <br> Семенович</div>
+                                          <div class="doctor__post">врач ультразвуковой диагностики</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский институт, 1984 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 35 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-6.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Герасимович Светлана <br> Бруненовна</div>
+                                          <div class="doctor__post">врач-эндокринолог, врач-педиатр</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Белорусский государственный медицинский университет, 2005 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 15 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-7.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Совенок Светлана <br> Николаевна</div>
+                                          <div class="doctor__post">врач-реабилитолог, врач-терапевт</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский институт, 1997 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 15 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-8.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Пекач Галина <br> Юрьевна</div>
+                                          <div class="doctor__post">врач акушер-гинеколог</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский университет</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 5 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-9.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Хмелевская Ирина <br> Антоновна</div>
+                                          <div class="doctor__post">врач-рефлексотерапевт, врач-терапев</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>УО "Витебский государственный медицинский университет", 2017 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 4 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-10.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Каминская Екатерина <br> Николаевна</div>
+                                          <div class="doctor__post">врач-реабилитолог</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>УО "Белорусский государственный медицинский университет", 2015 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 5 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-11.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Германович Андрей <br> Иванович</div>
+                                          <div class="doctor__post">врач-оториноларинголог</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>Гродненский государственный медицинский институт</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 25 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-12.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Денисёнок Ольга <br> Васильевна</div>
+                                          <div class="doctor__post">врач по лечебной физкультуре, врач-физиотерапевт</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>УО «Гродненский государственный медицинский университет», 2005 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 29 лет</div>
+                                        </div>
+                                      </div>
+                                      <div class="doctors-grid__item"> 
+                                        <div class="doctor"> 
+                                          <div class="doctor__img"> <img src="img/treatment/doctor/img-12.jpg" alt="" loading="lazy"></div>
+                                          <div class="doctor__name">Чергейко Лариса <br> Петровна</div>
+                                          <div class="doctor__post">врач по лечебной физкультуре, врач-физиотерапевт</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Образование: </span>УО «Гродненский государственный медицинский университет», 2005 год</div>
+                                          <div class="doctor__info"> <span class="doctor__info-label">Стаж: </span>Более 29 лет</div>
+                                        </div>
+                                      </div>
+                  </div>
+                </div>
+                <div class="dropdown-btn-cont js-dropdown-cont">
+                  <button class="dropdown-btn js-dropdown-btn" type="button"><span class="--active">Посмотреть всех врачей</span><span class="--close">Свернуть</span>
+                    <svg class="icon icon--angle-down">
+                      <use href="img/sprite.svg#angle-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-5">
+              <div class="main-container"> 
+                <div class="js-treatment-slider-5 treatment-slider">
+                  <div class="swiper"> 
+                    <div class="swiper-wrapper"> <a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-1.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Ультразвуковая диагностика</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-2.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Лабораторная диагностика</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-3.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Функциональная диагностика</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-4.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Кольпоскопия</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-5.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Биоимпедансный анализ (БИА)</div></a><a class="swiper-slide article-item" href="#">
+                                              <div class="article-item__img"> <img src="img/treatment/diagnostic/img-6.jpg" alt="" loading="lazy">
+                                                <div class="article-item__arrow"> 
+                                                  <svg class="icon icon--arrow-right">
+                                                    <use href="img/sprite.svg#arrow-right"></use>
+                                                  </svg>
+                                                </div>
+                                              </div>
+                                              <div class="article-item__title">Определение хеликобактера в выдыхаемом воздухе</div></a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-6">
+              <div class="main-container"> 
+                <ul class="accordion treatment-accordion">
+                  <li class="accordion__item">
+                    <div class="accordion__header">Административно-лечебный корпус </div>
+                    <div class="accordion__body">
+                      <div class="accordion__inner">
+                        <div class="treatment-table"> 
+                          <div class="treatment-table__head treatment-table__row">
+                            <div>Название кабинета</div>
+                            <div>№ кабинета</div>
+                            <div>Время работы</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медпункт</div>
+                            <div>103</div>
+                            <div>круглосуточно</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медицинская регистратура</div>
+                            <div>1 этаж (в торце АЛК)</div>
+                            <div>
+                               8:40-16:40, <span>перерыв: </span>13:15-14:00 <span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Реабилитолог</div>
+                            <div>102</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Рефлексотерапевт</div>
+                            <div>129</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Педиатр</div>
+                            <div>130</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет УЗИ</div>
+                            <div>131</div>
+                            <div>
+                               8:30-117:00, <span>перерыв: </span>11:00-11:30,<span class="--day-off">13:00-14:00</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Терапевт</div>
+                            <div>132</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет ЭКГ</div>
+                            <div>134</div>
+                            <div>
+                               16:00-17:00 (вых.: сб,вс)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <div class="accordion__header">Водоспелеолечебница</div>
+                    <div class="accordion__body">
+                      <div class="accordion__inner">
+                        <div class="treatment-table"> 
+                          <div class="treatment-table__head treatment-table__row">
+                            <div>Название кабинета</div>
+                            <div>№ кабинета</div>
+                            <div>Время работы</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медпункт</div>
+                            <div>103</div>
+                            <div>круглосуточно</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медицинская регистратура</div>
+                            <div>1 этаж (в торце АЛК)</div>
+                            <div>
+                               8:40-16:40, <span>перерыв: </span>13:15-14:00 <span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Реабилитолог</div>
+                            <div>102</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Рефлексотерапевт</div>
+                            <div>129</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Педиатр</div>
+                            <div>130</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет УЗИ</div>
+                            <div>131</div>
+                            <div>
+                               8:30-117:00, <span>перерыв: </span>11:00-11:30,<span class="--day-off">13:00-14:00</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Терапевт</div>
+                            <div>132</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет ЭКГ</div>
+                            <div>134</div>
+                            <div>
+                               16:00-17:00 (вых.: сб,вс)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <div class="accordion__header">Жилой корпус «Минский» (цокольный этаж)</div>
+                    <div class="accordion__body">
+                      <div class="accordion__inner">
+                        <div class="treatment-table"> 
+                          <div class="treatment-table__head treatment-table__row">
+                            <div>Название кабинета</div>
+                            <div>№ кабинета</div>
+                            <div>Время работы</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медпункт</div>
+                            <div>103</div>
+                            <div>круглосуточно</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медицинская регистратура</div>
+                            <div>1 этаж (в торце АЛК)</div>
+                            <div>
+                               8:40-16:40, <span>перерыв: </span>13:15-14:00 <span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Реабилитолог</div>
+                            <div>102</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Рефлексотерапевт</div>
+                            <div>129</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Педиатр</div>
+                            <div>130</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет УЗИ</div>
+                            <div>131</div>
+                            <div>
+                               8:30-117:00, <span>перерыв: </span>11:00-11:30,<span class="--day-off">13:00-14:00</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Терапевт</div>
+                            <div>132</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет ЭКГ</div>
+                            <div>134</div>
+                            <div>
+                               16:00-17:00 (вых.: сб,вс)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__item">
+                    <div class="accordion__header">Водноспортивный комплекс</div>
+                    <div class="accordion__body">
+                      <div class="accordion__inner">
+                        <div class="treatment-table"> 
+                          <div class="treatment-table__head treatment-table__row">
+                            <div>Название кабинета</div>
+                            <div>№ кабинета</div>
+                            <div>Время работы</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медпункт</div>
+                            <div>103</div>
+                            <div>круглосуточно</div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Медицинская регистратура</div>
+                            <div>1 этаж (в торце АЛК)</div>
+                            <div>
+                               8:40-16:40, <span>перерыв: </span>13:15-14:00 <span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Реабилитолог</div>
+                            <div>102</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Рефлексотерапевт</div>
+                            <div>129</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Педиатр</div>
+                            <div>130</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет УЗИ</div>
+                            <div>131</div>
+                            <div>
+                               8:30-117:00, <span>перерыв: </span>11:00-11:30,<span class="--day-off">13:00-14:00</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Терапевт</div>
+                            <div>132</div>
+                            <div>
+                               9:00-17:15, <span>перерыв: </span>13:15-14:00<span class="--day-off">(вых.: сб,вс)</span></div>
+                          </div>
+                          <div class="treatment-table__row">
+                            <div>Кабинет ЭКГ</div>
+                            <div>134</div>
+                            <div>
+                               16:00-17:00 (вых.: сб,вс)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-container"> <a class="btn-lg btn-full btn-primary" href="#">Цены на медицинские услуги </a></div>
+        </section>
+        <section class="section-reviews">
+          <div class="main-container">
+            <h3 class="section-title">Отзывы</h3>
+            <div class="section-sub section-sub-sm">
+              <p>Санаторий «Ружанский» — расположен в глубине хвойного леса в Брестской области возле озера Паперня близ посёлка городского типа Ружаны.</p>
+            </div>
+            <div class="reviews-slide js-reviews-slider"> 
+              <div class="swiper-navigation">
+                <div class="swiper-button-prev">
+                  <svg class="icon icon--angle-left">
+                    <use href="img/sprite.svg#angle-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg class="icon icon--angle-right">
+                    <use href="img/sprite.svg#angle-right"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Светлана Мелютина</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Все сотрудники доброжелательны, внимательны. Спасибо большое за ваши добрые сердца и такую отдачу в работе! Обязательно вернёмся в санаторий на следующий год.</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="text-center"><a class="btn btn-primary btn-more" href="#">Все отзывы</a></div>
+          </div>
+          <div class="banner banner-media"> 
+            <div class="banner__inner"> 
+              <div class="banner__media"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63278.058879325705!2d27.537898399121385!3d53.885806675663005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sua!4v1685907259767!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <div class="banner__info"> 
+                <h3 class="banner__title">Добраться к нам очень легко и удобно! Посмотрите схему проезда перед поездкой к нам.  </h3><a class="arrow-link" href="#">
+                   Схема проезда
+                  <svg class="icon icon--arrow-right">
+                    <use href="img/sprite.svg#arrow-right"></use>
+                  </svg></a>
+              </div>
+              <div class="banner__inner-decore"> <img src="img/rose-2.svg" alt="rose"></div>
+            </div>
+            <div class="banner__decore"></div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="main-container">
+          <div class="nav">
+            <ul class="nav__list"> 
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+              <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__row">
+            <div class="footer__left"> 
+              <div class="footer__col footer__menu-col">
+                <h3 class="footer__title">Лечебные процедуры</h3>
+                <ul class="footer-menu"> 
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Аллергология </a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Гинекология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Диетология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Иглорефлексотерапия</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Косметология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Эндокринология</a></li>
+                </ul>
+              </div>
+              <div class="footer__col footer__menu-col"> 
+                <h3 class="footer__title">Лечебные процедуры</h3>
+                <ul class="footer-menu"> 
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Оториноларингология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Педиатрия</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Стоматология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Реабилитология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Невролгия</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__contacts"> 
+                <div class="footer__contacts-item"> 
+                  <h3 class="footer__title-mobile">Контакты</h3>
+                  <h3 class="footer__title">Ресепшен</h3>
+                  <div class="footer__info"> <a href="tel:+345292256033">+345 (29) 225 60 33</a></div>
+                  <div class="footer__info"> <a href="tel:+345163233465">+345 (1632) 33 465</a></div>
+                </div>
+                <div class="footer__contacts-item"> 
+                  <h3 class="footer__title">Отдел бронирования</h3>
+                  <div class="footer__info"><a href="tel:+375447440203">+375 (44) 744 02 03</a> , <a href="tel:+375297440203">+375 (29) 744 02 03</a> - для звонков из Беларуси</div>
+                  <div class="footer__info">
+                     <a href="tel:+375163233426">+375 (1632) 33 426</a></div>
+                  <div class="footer__info">
+                     <a href="tel:+74991120426">+7 (499) 11 20426</a> - для звонков из России</div>
+                  <div class="footer__info">
+                     <a href="tel:+48226022427">+48 22 60 22 427</a> - для звонков из Польши</div>
+                </div>
+                <div class="footer__mail"> <b>e-mail: </b><a href="mailto:market@sanruzh.by">market@sanruzh.by</a></div>
+              </div>
+              <ul class="footer-list"> 
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Номера </a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Путёвки</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Цены на путёвки</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Цены на процедуры</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__left"> 
+              <div class="footer__col">
+                <h3 class="footer__title">Адрес:</h3>
+                <div class="footer__address"> <span>225155 Брестская обл., Пружанский р-н,</span>д. Заполье, 1А, Ружанский сельсовет.</div>
+              </div>
+              <div class="footer__col footer__hours-col">
+                <h3 class="footer__title">Время работы:</h3>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Контрольно-пропускной пункт</div>
+                  <div class="footer__hours-row">Круглосуточно</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">RECEPTION (5 корпус)</div>
+                  <div class="footer__hours-row">Ежедневно с 8:30 до 20:30</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__col footer__hours-col">
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Водноспортивный комплекс</div>
+                  <div class="footer__hours-row">Ежедневно с 8:30 до 22:00</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Кафе «Панства Хмелю»</div>
+                  <div class="footer__hours-row">Ежедневно с 11:00 до 23:00</div>
+                </div>
+              </div>
+              <div class="footer__col footer__hours-col">
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Магазин «Наша Марка»</div>
+                  <div class="footer__hours-row">Ежедневно с 12:00 до 19:00</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Салон красоты «Первая Леди»</div>
+                  <div class="footer__hours-row">Ежедневно с 9:00 до 20:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="footer-partners"> 
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-1.png" media="(min-width: 768px)"><img src="img/partners/partners-1-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-2.png" media="(min-width: 768px)"><img src="img/partners/partners-2-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-3.png" media="(min-width: 768px)"><img src="img/partners/partners-3-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-4.png" media="(min-width: 768px)"><img src="img/partners/partners-4-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-5.png" media="(min-width: 768px)"><img src="img/partners/partners-5-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-6.png" media="(min-width: 768px)"><img src="img/partners/partners-6-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-7.png" media="(min-width: 768px)"><img src="img/partners/partners-7-mob.png" alt="">
+                </picture></a></li>
+          </ul>
+          <div class="footer-bottom"> 
+            <div class="footer-copy">© 2023, Все права защищены</div>
+            <div class="footer-dev">Разработано в<a href="#"><img src="img/likeIt.svg" alt="likeIt"></a></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/libs/datepicker-full.min.js"></script>
+    <script src="js/libs/tom-select.complete.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/treatmentTabHandler.js"></script>
+    <script src="js/treatmentSliderHandler.js"></script>
+    <script src="js/dropdownHandler.js"></script>
+    <script src="js/AccordionHandler.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-class NumberSlider {
+class ProceduresSlider {
   constructor(selector) {
     this.selectors = document.querySelectorAll(selector);
     this.initSliders();
@@ -37,8 +37,8 @@ class NumberSlider {
               },
             },
             768: {
-              spaceBetween: 16,
-              slidesPerView: 2,
+              spaceBetween: 10,
+              slidesPerView: 3,
               scrollbar: {
                 el: scrollbar,
                 draggable: true,
@@ -46,7 +46,7 @@ class NumberSlider {
             },
             1100: {
               spaceBetween: 10,
-              slidesPerView: 3,
+              slidesPerView: 4,
             },
           },
         });
@@ -56,6 +56,5 @@ class NumberSlider {
 }
 
 
-const numberSlider = new NumberSlider('.js-number-slider');
-const articleSlider = new NumberSlider('.js-article-slider');
+const proceduresSlider = new ProceduresSlider('.js-procedures-slider ');
 
