@@ -691,3 +691,42 @@
 .disease-profile b {
   color: #333;
 }
+
+.btn-lg.news-btn {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .btn-lg.news-btn .icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn-lg.news-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.article {
+  margin-bottom: 60px;
+}
+
+.article-bottom-btns {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .article-bottom-btns {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

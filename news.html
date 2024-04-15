@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>news</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/tom-select.min.css">
+    <link rel="stylesheet" href="css/libs/datepicker.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <div class="content">
+        <header class="header">
+          <div class="main-container">
+            <div class="header-top"> <a class="logo header__logo" href="#">
+                <div class="logo__img"> <img src="img/logo.png" alt="logo"></div>
+                <p class="logo__text">Санаторий «Ружанский»<br>Курортно-реабилитационный центр «Ружанский»<br>Курорт «Ружа Хутар-Роза SPA» </p></a>
+              <ul class="social header__social">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#odnoklasniki"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+              <button class="button-eye button-eye-mobile">
+                <svg class="icon icon--eye">
+                  <use href="img/sprite.svg#eye"></use>
+                </svg>
+              </button>
+              <div class="header-contacts">
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Ресепшен</h3>
+                  <div class="header-contacts__body"><a class="header-contacts__phone" href="tel:+375292256033">+375 (29) 225 60 33</a>
+                    <div class="header-contacts__drop"><a class="header-contacts__phone" href="tel:+375163233465">+375 (1632) 33 465</a></div>
+                    <button class="header-contacts__btn-drop"></button>
+                  </div>
+                </div>
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Отдел бронирования</h3>
+                  <div class="header-contacts__body"><a class="header-contacts__phone" href="tel:+375447440203">+375 (44) 744 02 03</a>
+                    <div class="header-contacts__drop"><a class="header-contacts__phone" href="tel:+375163233426">+375 (1632) 33 426</a></div>
+                    <button class="header-contacts__btn-drop"></button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-menu">
+                <svg class="icon icon--menu">
+                  <use href="img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header-bottom"> 
+              <div class="nav header__nav"> 
+                <ul class="nav__list"> 
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <button class="button-eye"> 
+                <svg class="icon icon--eye">
+                  <use href="img/sprite.svg#eye"></use>
+                </svg>
+              </button>
+              <ul class="lang">
+                <li class="lang__item"><a class="lang__link active" href="#">рус</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">бел</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">eng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-menu"> 
+            <div class="mobile-menu__head"><a class="logo" href="#">
+                <div class="logo__img"> <img src="img/logo.png" alt="logo"></div>
+                <p class="logo__text">Санаторий «Ружанский»<br>Курортно-реабилитационный центр «Ружанский»<br>Курорт «Ружа Хутар-Роза SPA» </p></a>
+              <button class="mobile-menu__close"> 
+                <svg class="icon icon--cross">
+                  <use href="img/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="mobile-menu__body">
+              <div class="nav">
+                <ul class="nav__list"> 
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                    <div class="nav__drop"> 
+                      <ul class="nav-sub">
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                        <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <ul class="lang">
+                <li class="lang__item"><a class="lang__link active" href="#">рус</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">бел</a></li>
+                <li class="lang__item"><a class="lang__link" href="#">eng</a></li>
+              </ul>
+              <div class="header-contacts">
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Ресепшен</h3><a class="header-contacts__phone" href="tel:+375292256033">+375 (29) 225 60 33</a><a class="header-contacts__phone" href="tel:+375163233465">+375 (1632) 33 465</a>
+                </div>
+                <div class="header-contacts__col">
+                  <h3 class="header-contacts__title">Отдел бронирования</h3><a class="header-contacts__phone" href="tel:+375447440203">+375 (44) 744 02 03</a><a class="header-contacts__phone" href="tel:+375163233426">+375 (1632) 33 426</a>
+                </div>
+              </div>
+              <ul class="social">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#odnoklasniki"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                    <svg>
+                      <use href="img/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="main-container"> 
+          <ul class="breadcrumbs"> 
+            <li> <a href="#">Новости</a></li>
+            <li>Путевки</li>
+          </ul>
+        </div>
+        <section class="section">
+          <div class="main-container"> 
+            <h3 class="section-title">Новости</h3>
+            <div class="news-list"><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-1.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Вни­мание, по­сети­телям СПА-ком­плек­са!</h4>
+                  <div class="news-item__text"> 
+                    <p>Уважаемые гости санатория!</p>
+                    <p>Банный комплекс работает:</p>
+                    <p>25 декабря и 1 января</p>
+                    <p>с 14:00 до 17:00 и с 18:00 до 22:45</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-2.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Ак­ция "Счас­тли­вые дни"</h4>
+                  <div class="news-item__text"> 
+                    <p> <b>10 Но­яб­ря 2023</b></p>
+                    <p>"Счастливые дни" наступили в Ружанском. </p>
+                    <p>При бронировании путёвки на 7 дней и более с 10.12.2023 по 20.12.2023 получаете бонусом следующие услуги:</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-3.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Из­ме­нения вре­мени ра­боты ак­ва­пар­ка</h4>
+                  <div class="news-item__text"> 
+                    <p>Время работы аквапарка:</p>
+                    <p>Ежедневно с 10:00 до 20:00, перерыв с 13:00 до 14:00 и с 17:00 до 18:00.</p>
+                    <p>Посещение платное: 13,00 бел. руб.</p>
+                    <p>При себе иметь: купальник, шапочку, сменную обувь, мыльные средства для тела, мочалку, полотенце.</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-4.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Из­ме­нение гра­фика ра­боты са­лона кра­соты</h4>
+                  <div class="news-item__text"> 
+                    <p>Уважаемые отдыхающие и гости санатория!</p>
+                    <p>С 16.11.2023 временно изменён график работы салона красоты "Первая леди".Салон красоты работает понедельник-пятница с 9:00 до 17:45, перерыв с 14:00 до 14:45.</p>
+                    <p>Ждём вас в салоне красоты "Первая леди"!</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-5.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Но­вогод­няя прог­рамма в "Ру­жан­ском"!</h4>
+                  <div class="news-item__text"> 
+                    <p>Новый год – это самый любимый праздник большинства взрослых и детей, ведь в ночь с 31 декабря на 1 января (а в большинстве стран начало года приходится именно на эти числа) случаются самые настоящие чудеса!</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="news-item" href="#"> 
+                <div class="news-item__img"> <img src="img/news/img-6.jpg" alt=""></div>
+                <div class="news-item__body"> 
+                  <h4 class="news-item__name">Об­новлен­ный СПА-ком­плекс в "Ру­жан­ском"</h4>
+                  <div class="news-item__text"> 
+                    <p> <b>9 Но­яб­ря 2023</b></p>
+                    <p>Ува­жа­емые от­ды­ха­ющие и гос­ти са­нато­рия!</p>
+                    <p>Приг­ла­ша­ем Вас по­сетить наш об­новлен­ный бан­ный ком­плекс.</p>
+                    <p>Ждём всех в СПА-комплексе "Роза SPA"!</p>
+                  </div>
+                  <div class="arrow-link">
+                     Подробнее
+                    <svg class="icon icon--arrow-right">
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div></a></div>
+          </div>
+        </section>
+        <section class="section-reviews">
+          <div class="main-container">
+            <h3 class="section-title">Отзывы</h3>
+            <div class="section-sub section-sub-sm">
+              <p>Санаторий «Ружанский» — расположен в глубине хвойного леса в Брестской области возле озера Паперня близ посёлка городского типа Ружаны.</p>
+            </div>
+            <div class="reviews-slide js-reviews-slider"> 
+              <div class="swiper-navigation">
+                <div class="swiper-button-prev">
+                  <svg class="icon icon--angle-left">
+                    <use href="img/sprite.svg#angle-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg class="icon icon--angle-right">
+                    <use href="img/sprite.svg#angle-right"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Светлана Мелютина</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Все сотрудники доброжелательны, внимательны. Спасибо большое за ваши добрые сердца и такую отдачу в работе! Обязательно вернёмся в санаторий на следующий год.</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-item"> 
+                    <div class="review-item__inner">
+                      <div class="review-item__head"> 
+                        <div class="review-item__avatar"> <img src="img/avatar.jpg" alt="avatar"></div>
+                        <div class="review-item__head-info"> 
+                          <div class="review-item__name">Наталья Богдан</div>
+                          <div class="review-item__date">18 мая 2023</div>
+                        </div>
+                      </div>
+                      <div class="review-item__text"> 
+                        <p>Выражаю слова искренней благодарности всему коллективу санатория “Ружанский”.</p>
+                        <p>Качество обслужвания на высшем уровне. Коллектив очень благожелателен и готов помочь, проконсультировать в любую минуту. Особенно понравились SPA процедуры понравились SPA процедуры понравились SPA процедуры</p>
+                      </div><a class="arrow-link-sm link-accent" href="#">Читать отзыв
+                        <svg class="icon icon--arrow-right">
+                          <use href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="text-center"><a class="btn btn-primary btn-more" href="#">Все отзывы</a></div>
+          </div>
+          <div class="banner banner-media"> 
+            <div class="banner__inner"> 
+              <div class="banner__media"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63278.058879325705!2d27.537898399121385!3d53.885806675663005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sua!4v1685907259767!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <div class="banner__info"> 
+                <h3 class="banner__title">Добраться к нам очень легко и удобно! Посмотрите схему проезда перед поездкой к нам.  </h3><a class="arrow-link" href="#">
+                   Схема проезда
+                  <svg class="icon icon--arrow-right">
+                    <use href="img/sprite.svg#arrow-right"></use>
+                  </svg></a>
+              </div>
+              <div class="banner__inner-decore"> <img src="img/rose-2.svg" alt="rose"></div>
+            </div>
+            <div class="banner__decore"></div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="main-container">
+          <div class="nav">
+            <ul class="nav__list"> 
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">О санатории</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Питание</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Досуг</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Онлайн камеры</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Территория</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Вопрос-ответ</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Отзывы клиентов</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item"> <a class="nav__link" href="#">Путевки</a></li>
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Номера</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера1</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера2</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера3</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Номера4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item nav__item-toggle"> <a class="nav__link" href="#">Цена</a>
+                <div class="nav__drop"> 
+                  <ul class="nav-sub">
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена1</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена2</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена3</a></li>
+                    <li class="nav-sub__item"> <a class="nav-sub__link" href="#">Цена4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item"> <a class="nav__link" href="#">Новости</a></li>
+              <li class="nav__item"> <a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__row">
+            <div class="footer__left"> 
+              <div class="footer__col footer__menu-col">
+                <h3 class="footer__title">Лечебные процедуры</h3>
+                <ul class="footer-menu"> 
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Аллергология </a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Гинекология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Диетология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Иглорефлексотерапия</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Косметология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Эндокринология</a></li>
+                </ul>
+              </div>
+              <div class="footer__col footer__menu-col"> 
+                <h3 class="footer__title">Лечебные процедуры</h3>
+                <ul class="footer-menu"> 
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Оториноларингология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Педиатрия</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Стоматология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Реабилитология</a></li>
+                  <li class="footer-menu__item"> <a class="footer-menu__link" href="#">Невролгия</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__contacts"> 
+                <div class="footer__contacts-item"> 
+                  <h3 class="footer__title-mobile">Контакты</h3>
+                  <h3 class="footer__title">Ресепшен</h3>
+                  <div class="footer__info"> <a href="tel:+345292256033">+345 (29) 225 60 33</a></div>
+                  <div class="footer__info"> <a href="tel:+345163233465">+345 (1632) 33 465</a></div>
+                </div>
+                <div class="footer__contacts-item"> 
+                  <h3 class="footer__title">Отдел бронирования</h3>
+                  <div class="footer__info"><a href="tel:+375447440203">+375 (44) 744 02 03</a> , <a href="tel:+375297440203">+375 (29) 744 02 03</a> - для звонков из Беларуси</div>
+                  <div class="footer__info">
+                     <a href="tel:+375163233426">+375 (1632) 33 426</a></div>
+                  <div class="footer__info">
+                     <a href="tel:+74991120426">+7 (499) 11 20426</a> - для звонков из России</div>
+                  <div class="footer__info">
+                     <a href="tel:+48226022427">+48 22 60 22 427</a> - для звонков из Польши</div>
+                </div>
+                <div class="footer__mail"> <b>e-mail: </b><a href="mailto:market@sanruzh.by">market@sanruzh.by</a></div>
+              </div>
+              <ul class="footer-list"> 
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Номера </a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Путёвки</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Цены на путёвки</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Цены на процедуры</a></li>
+                <li class="footer-list__item"> <a class="footer-list__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__left"> 
+              <div class="footer__col">
+                <h3 class="footer__title">Адрес:</h3>
+                <div class="footer__address"> <span>225155 Брестская обл., Пружанский р-н,</span>д. Заполье, 1А, Ружанский сельсовет.</div>
+              </div>
+              <div class="footer__col footer__hours-col">
+                <h3 class="footer__title">Время работы:</h3>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Контрольно-пропускной пункт</div>
+                  <div class="footer__hours-row">Круглосуточно</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">RECEPTION (5 корпус)</div>
+                  <div class="footer__hours-row">Ежедневно с 8:30 до 20:30</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__col footer__hours-col">
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Водноспортивный комплекс</div>
+                  <div class="footer__hours-row">Ежедневно с 8:30 до 22:00</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Кафе «Панства Хмелю»</div>
+                  <div class="footer__hours-row">Ежедневно с 11:00 до 23:00</div>
+                </div>
+              </div>
+              <div class="footer__col footer__hours-col">
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Магазин «Наша Марка»</div>
+                  <div class="footer__hours-row">Ежедневно с 12:00 до 19:00</div>
+                </div>
+                <div class="footer__hours"> 
+                  <div class="footer__hours-row">Салон красоты «Первая Леди»</div>
+                  <div class="footer__hours-row">Ежедневно с 9:00 до 20:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="footer-partners"> 
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-1.png" media="(min-width: 768px)"><img src="img/partners/partners-1-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-2.png" media="(min-width: 768px)"><img src="img/partners/partners-2-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-3.png" media="(min-width: 768px)"><img src="img/partners/partners-3-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-4.png" media="(min-width: 768px)"><img src="img/partners/partners-4-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-5.png" media="(min-width: 768px)"><img src="img/partners/partners-5-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-6.png" media="(min-width: 768px)"><img src="img/partners/partners-6-mob.png" alt="">
+                </picture></a></li>
+            <li class="footer-partners__item"> <a class="footer-partners__link" href="#">
+                <picture>
+                  <source srcset="img/partners/partners-7.png" media="(min-width: 768px)"><img src="img/partners/partners-7-mob.png" alt="">
+                </picture></a></li>
+          </ul>
+          <div class="footer-bottom"> 
+            <div class="footer-copy">© 2023, Все права защищены</div>
+            <div class="footer-dev">Разработано в<a href="#"><img src="img/likeIt.svg" alt="likeIt"></a></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/libs/datepicker-full.min.js"></script>
+    <script src="js/libs/tom-select.complete.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
